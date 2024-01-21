@@ -13,17 +13,33 @@
             <li><a class="about" href="aboutme.html">About me</a></li>
             <li><a class="blog" href="blog.html">Blog</a></li>
             <li><a class="resume" href="resume.html">Resume</a></li>
-            <li><a class="contact" href="contact.html"><button>Contact</button></a></li>
+            <li><a class="contact" href="contact.html">Contact</a></li>
+            <li><a>
+                <label class="burger" for="burger" onclick=showsidebar()>
+                    <input type="checkbox" id="burger" onclick=showsidebar()>
+                    <span onclick=showsidebar()></span>
+                    <span onclick=showsidebar()></span>
+                    <span onclick=showsidebar()></span>
+                </label>
+            </a></li>
+
+            <ul class="sidebar">
+                <li><a class="about" href="aboutme.html">About me</a></li>
+                <li><a class="blog" href="blog.html">Blog</a></li>
+                <li><a class="resume" href="resume.html">Resume</a></li>
+                <li><a class="contact" href="contact.html">Contact</a></li>
+            </ul>
             
         </nav>
-        <label class="burger" for="burger">
-            <input type="checkbox" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+        
 
     </header>
+    <script>    
+        function showsidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.styling.display='flex'
+}
+    </script>
     
 </body>
 </html>
